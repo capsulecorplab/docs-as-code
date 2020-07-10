@@ -1,0 +1,94 @@
+= An intro to Docs as Code
+
+by Sean Marquez
+
+== When documentation is good
+
+* Docs are up-to-date
+* Docs are easy to navigate
+* Docs are easy to maintain
+
+== When documentation is bad
+
+* Docs are not up-to-date
+* Docs are hard to navigate 
+* Docs are hard to maintain
+
+== Enter _Docs as Code_...
+
+The same _best practices_ used for maintaining software, but applied to documentation
+
+ This very presentation is written in asciidoc
+
+== 3 ingredients to maintaining documentation as code
+
+* A _language_
+* A _toolchain_
+* A _methodology_
+
+== Language
+
+* _Markup language_ used to write the docs
+
+ e.g., Markdown, ReStructuredText, Asciidoc
+
+* _Template language_, a superset of a markup language, used to format the docs
+
+ e.g., Liquid, Jinja2, Handlebars
+
+* _Source language_ used in the toolchain
+
+ e.g., Ruby for Asciidoctor, Python for Sphinx
+
+== Toolchain
+
+* Static Site Generator
+
+ e.g., Sphynx, Asciidoctor, Hugo
+
+* Distributed version control system
+
+ e.g., git
+
+* CI/CD service
+
+ e.g., TravisCI, GitHub Actions, Netlify
+
+* Publishing platform
+
+ e.g., GitHub Pages, ReadTheDocs, Netlify
+
+ Some publishing platforms have CI/CD services built-in.
+
+== Methodology
+
+* _Docs-Driven-Development_
+
+ Write your docs first, then implement the docs.
+
+* _The Documentation System_ by Daniele Procida
+
+ Separate your docs into 4 distinct categories:
+ Tutorials, How-To Guides, Explanations, & References
+
+== Example Projects
+
+* https://learnteachcode.org/resources
+* https://tetrabiodistributed.org
+* https://socallinuxexpo.github.io/scale-av-web/
+
+== References
+
+* https://documentation.divio.com/
+* https://www.writethedocs.org/videos/portland/2019/lessons-learned-in-a-year-of-docs-driven-development-jessica-parsons/
+* https://www.docsy.dev/
+
+== Closing thoughts
+
+_Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live._
+
+_With a sufficient number of users of an API, it does not matter what you promise in the contract:
+all observable behaviors of your system will be depended on by somebody._ - Hyrum's Law
+
+== The end.
+
