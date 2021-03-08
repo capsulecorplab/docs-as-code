@@ -1,4 +1,4 @@
-= An intro to Docs as Code
+= An Introduction to Docs-as-Code
 
 by Sean Marquez
 
@@ -14,17 +14,21 @@ by Sean Marquez
 * Docs are hard to navigate 
 * Docs are hard to maintain
 
-== Enter _Docs as Code_...
+== What is a _Docs as Code_ approach?
 
-The same _best practices_ used for maintaining software, but applied to documentation
+Documentation as Code (_Docs as Code_) refers to a philosophy that you should be writing documentation with the same tools as code.
 
- This very presentation is written in asciidoc
+== Advantages to a _Docs as Code_ approach
 
-== 3 ingredients to maintaining documentation as code
+* Writers integrate better with development teams
+* Developers will often write a first draft of documentation
+* You can block merging of new features if they don’t include documentation, which incentivizes developers to write about features while they are fresh
 
-* A _language_
-* A _toolchain_
-* A _methodology_
+== To adopt a _Docs as Code_ approach, consider the following...
+
+* _Language_
+* _Toolchain_
+* _Methodology_
 
 == Language
 
@@ -36,13 +40,17 @@ The same _best practices_ used for maintaining software, but applied to document
 
  e.g., Liquid, Jinja2, Handlebars
 
-* _Source language_ used in the toolchain
+* _Source language_ of the toolchain used to render the docs
 
  e.g., Ruby for Asciidoctor, Python for Sphinx
 
 == Toolchain
 
-* Static Site Generator
+* Issue Tracker
+
+ e.g., Jira, GitHub, GitLab
+
+* Conversion Engine / Static Site Generator
 
  e.g., Sphynx, Asciidoctor, Hugo
 
@@ -50,45 +58,58 @@ The same _best practices_ used for maintaining software, but applied to document
 
  e.g., git
 
-* CI/CD service
+* CI/CD service & publishing platform
 
- e.g., TravisCI, GitHub Actions, Netlify
+ e.g., TravisCI, GitHub Actions | GitHub Pages, ReadTheDocs, Netlify
 
-* Publishing platform
-
- e.g., GitHub Pages, ReadTheDocs, Netlify
-
- Some publishing platforms have CI/CD services built-in.
+ Some publishing platforms have CI/CD services built-in
 
 == Methodology
 
 * _Docs-Driven-Development_
 
- Write your docs first, then implement the docs.
+ Write your docs first, then implement what you documented
 
-* _The Documentation System_ by Daniele Procida
+* Agile Development Practice
 
- Separate your docs into 4 distinct categories:
- Tutorials, How-To Guides, Explanations, & References
+ e.g., scrum, kanban
 
-== Example Projects
+* Code (Docs) Reviews
 
-* https://learnteachcode.org/resources
-* https://tetrabiodistributed.org
-* https://socallinuxexpo.github.io/scale-av-web/
+ Have someone review your docs (e.g., as a pull request on GitHub)
+
+== Example Projects that use a Docs-as-Code Approach
+
+* NodeJS
+
+ https://github.com/nodejs/nodejs.org
+
+* SoCal Linux Expo A/V Team
+
+ https://github.com/socallinuxexpo/scale-av-web/
+
+* This presentation!
+
+ https://github.com/capsulecorplab/docs-as-code
 
 == References
 
-* https://documentation.divio.com/
-* https://www.writethedocs.org/videos/portland/2019/lessons-learned-in-a-year-of-docs-driven-development-jessica-parsons/
-* https://www.docsy.dev/
+* https://www.writethedocs.org/guide/docs-as-code/
+* https://www.writethedocs.org/videos/prague/2019/the-uk-government-meets-docs-as-code-jen-lambourne/
 
-== Closing thoughts
+[.columns]
+== Closing thoughts...
 
-_Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live._
+[.column]
+--
+_With a sufficient number of users of an API, it does not matter what you promise in the contract; All observable behaviors of your system will be depended on by somebody._ - Hyrum's Law
+--
 
-_With a sufficient number of users of an API, it does not matter what you promise in the contract:
-all observable behaviors of your system will be depended on by somebody._ - Hyrum's Law
+[.column]
+--
+image::https://imgs.xkcd.com/comics/workflow.png[workflow, 334, 463]
+https://xkcd.com/1172/
+--
 
-== The end.
+== The End
 
