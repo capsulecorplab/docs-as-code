@@ -1,0 +1,20 @@
+= Docs-as-Code =
+
+A https://capsulecorplab.github.io/docs-as-code/[Docs-as-Code presentation],
+following a https://www.writethedocs.org/guide/docs-as-code/[docs-as-code] approach.
+
+Presentation is generated,
+using https://docs.asciidoctor.org/reveal.js-converter/latest/[Asciidoctor reveal.js]
+ - a converter for the
+https://asciidoctor.org/docs/asciidoc-syntax-quick-reference[AsciiDoc] markup language into HTML5 presentaions,
+using https://revealjs.com/[reveal.js].
+
+Presentation is deployed to GitHub Pages via automated build pipeline, using https://github.com/peaceiris/actions-gh-pages[GitHub Actions for GitHub Pages].
+
+== Usage ==
+
+To view the presentation locally, clone the repo and run the build script:
+
+ git clone https://github.com/capsulecorplab/docs-as-code.git
+ cd docs-as-code
+ ./build.sh
