@@ -45,7 +45,7 @@ Documentation as Code (_Docs as Code_) refers to a philosophy that you should be
 
 * _Markup language_ used to write the docs
 
- e.g., Markdown, ReStructuredText, Asciidoc
+ e.g., Markdown, ReStructuredText, Asciidoc, LaTex 
 
 * _Template language_, a superset of a markup language, used to format the docs
 
