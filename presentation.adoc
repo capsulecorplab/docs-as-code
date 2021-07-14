@@ -63,7 +63,7 @@ Documentation as Code (_Docs as Code_) refers to a philosophy that you should be
 
 * Conversion Engine / Static Site Generator
 
- e.g., Sphynx, Asciidoctor, Hugo
+ e.g., Sphinx, Asciidoctor, Hugo
 
 * Distributed version control system
 
