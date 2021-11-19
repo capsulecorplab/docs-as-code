@@ -2,28 +2,17 @@
 
 by Sean Marquez
 
-== Frequent concerns with managing documentation
+== When documentation is good
 
-* What were the changes/design decisions
-* When were the changes/decisions made
-* Who made the changes/decisions
-* Where were the changes/decisions specified
-* How were the changes/decisions implemented
-* Why were the changes/decisions implemented
+* Docs are up-to-date
+* Docs are easy to navigate
+* Docs are easy to maintain
 
-== Characteristics of modern software development
+== When documentation is bad
 
-* Changes to codebase are captured in a "commit history"
-
- i.e., who changed what & when
-
-* Workflow conventions often incorporate an issue tracker
-
- i.e., where they were specified 
-
-* Workflow conventions often include discussion & review process
-
- i.e., how & why a change was implemented
+* Docs are not up-to-date
+* Docs are hard to navigate 
+* Docs are hard to maintain
 
 == What is a _Docs as Code_ approach?
 
