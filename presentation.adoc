@@ -1,6 +1,6 @@
 = An Introduction to Docs-as-Code
 
-by Sean Marquez
+by Sean Marquez (& contributors)
 
 == When documentation is good
 
