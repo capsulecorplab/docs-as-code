@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 
-docker run --rm --volume $PWD:/src -w "/src" capsulecorplab/asciidoctor-extended:revealjs 'bundle exec asciidoctor-revealjs -a revealjsdir=https://cdn.jsdelivr.net/npm/reveal.js@3.9.2 presentation.adoc -o public/index.html'
+docker run --rm -v "$PWD:/src" -w "/src" asciidoctor/docker-asciidoctor:1.6.0 asciidoctor-revealjs presentation.adoc
+
+if [ ! -r ./public ]; then
+    mkdir public
+fi
+
+mv -f presentation.html public/index.html
+cp -r reveal.js/ public/
