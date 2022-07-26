@@ -1,4 +1,4 @@
-name: Build w/ Hugo & deploy to GitHub Pages
+name: Build w/ asciidoctor-revealjs & deploy to GitHub Pages
 
 on:
   push:
@@ -10,6 +10,9 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+          fetch-depth: 0
 
       - name: Build
         run: bash build.sh
